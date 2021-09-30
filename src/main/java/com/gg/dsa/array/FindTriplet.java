@@ -15,18 +15,18 @@ public class FindTriplet {
             for (int j = 0; j < arr.length; j++) {
                 for (int l = 0; l < sum.length; l++) {
                     if (arr[j] == sum[l]) {
-                        System.out.println(arr[i] + ">>>" + (sum[l] - arr[i]));
+                        System.out.println(arr[i] + ", " + (sum[l] - arr[i]));
                         count++;
                     }
                 }
             }
         }
-        System.out.println("count " + count);
+        System.out.println("Count of triplet:" + count);
         return count;
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 5, 3, 2};
+        int arr[] = {1, 5, 3, 2};// O(n2)
         FindTriplet f = new FindTriplet();
         f.findTriplet(arr);
 
